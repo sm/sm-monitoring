@@ -1,0 +1,11 @@
+libpng
+zlib
+freetype
+libxml2
+fontconfig
+pixman
+cairo
+glib
+pango
+rrdtool
+cacti
