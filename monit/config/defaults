@@ -1,4 +1,4 @@
-version=5.2.5
+version=5.3.1
 base_url=http://mmonit.com/monit/dist
 archive_format=tar.gz
 website_url=http://mmonit.com/monit/
