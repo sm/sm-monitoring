@@ -1,0 +1,14 @@
+#!bin/sh
+
+if ! file contains string "monit "
+then
+  file write append to "/etc/inittab" \
+    string "
+# monit process monitoring daemon
+mo:2345:respawn:${service_sbin_path}/monit -Ic /etc/monitrc
+mo:2345:respawn:${service_sbin_path}/monit -Ic /etc/monitrc
+# mon:2345:wait:${service_sbin_path}/monit -Ic /etc/monitrc start all
+# moff:06:wait:${service_sbin_path}/monit -Ic /etc/monitrc stop all
+"
+fi
+
